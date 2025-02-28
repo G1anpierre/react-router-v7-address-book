@@ -1,6 +1,4 @@
 import {
-  Form,
-  Link,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -8,14 +6,8 @@ import {
   redirect,
 } from "react-router";
 import type { Route } from "./+types/root";
-import { getContacts } from "./data";
 
 import appStylesHref from "./app.css?url";
-
-// export async function clientLoader() {
-//   const contacts = await getContacts();
-//   return { contacts };
-// }
 
 import { createEmptyContact } from "./data";
 

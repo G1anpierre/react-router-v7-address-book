@@ -10,11 +10,6 @@ import { getContacts } from "../data";
 import type { Route } from "./+types/sidebar";
 import { useEffect } from "react";
 
-// export async function clientLoader() {
-//   const contacts = await getContacts();
-//   return { contacts };
-// }
-
 export async function loader({ request }: Route.LoaderArgs) {
   const url = new URL(request.url);
   const q = url.searchParams.get("q");

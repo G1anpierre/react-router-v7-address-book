@@ -20,14 +20,6 @@ export async function action({ params, request }: Route.ActionArgs) {
 }
 
 export default function Contact({ loaderData }: Route.ComponentProps) {
-  //   const contact = {
-  //     first: "Your",
-  //     last: "Name",
-  //     avatar: "https://placecats.com/200/200",
-  //     twitter: "your_handle",
-  //     notes: "Some notes",
-  //     favorite: true,
-  //   };
   const { contact } = loaderData;
 
   return (
